@@ -1,22 +1,57 @@
-@font: 1em Tahoma, Arial, sans-serif;
+@fontFamily: 'Poppins', sans-serif;
 @lineHeight: 1.4em;
 @mainColor: red;
 @headerColor: blue;
 
 html {
-    font-size: 125%;
+    font-size: 112.5%;
 }
 
+/*18px*/
+
 body {
-    font: @font;
-    line-height: @lineHeight;
-    color: @mainColor;
-    background-color: lighten(@mainColor, 85%);
+    background: white;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000000;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 3rem 0 1.38rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
 }
 
 h1 {
-    font: @font;
-    color: @headerColor
+    margin-top: 0;
+    font-size: 3.052rem;
+}
+
+h2 {
+    font-size: 2.441rem;
+}
+
+h3 {
+    font-size: 1.953rem;
+}
+
+h4 {
+    font-size: 1.563rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+small,
+.text_small {
+    font-size: 0.8rem;
 }
 
 ul {
@@ -26,7 +61,7 @@ ul {
         padding: 10px 0;
         list-style: none;
         border-bottom: 1px lighten(@mainColor, 60%) dotted;
-        font: @font;
+        font-family: @fontFamily;
 
     }
 }
