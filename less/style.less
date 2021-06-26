@@ -1,0 +1,29 @@
+@font: ~"1em/1.6em"Tahoma, Arial, sans-serif;
+@mainColor: red;
+
+html {
+    font-size: 125%;
+}
+
+body {
+    font: @font;
+    text-shadow: 1px 1px 0 #fff;
+    color: @mainColor;
+    background-color: lighten(@mainColor, 85%);
+}
+
+h1 {
+    font: ~"@font * 1.3em";
+}
+
+ul {
+    padding: 0;
+
+    li {
+        padding: 10px 0;
+        list-style: none;
+        border-bottom: 1px lighten(@mainColor, 60%) dotted;
+        font: ~"@font * 0.8em";
+
+    }
+}
