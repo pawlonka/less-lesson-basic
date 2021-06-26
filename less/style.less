@@ -1,5 +1,7 @@
-@font: ~"1em/1.6em"Tahoma, Arial, sans-serif;
+@font: 1em Tahoma, Arial, sans-serif;
+@lineHeight: 1.4em;
 @mainColor: red;
+@headerColor: blue;
 
 html {
     font-size: 125%;
@@ -7,13 +9,14 @@ html {
 
 body {
     font: @font;
-    text-shadow: 1px 1px 0 #fff;
+    line-height: @lineHeight;
     color: @mainColor;
     background-color: lighten(@mainColor, 85%);
 }
 
 h1 {
-    font: ~"@font * 1.3em";
+    font: @font;
+    color: @headerColor
 }
 
 ul {
@@ -23,7 +26,7 @@ ul {
         padding: 10px 0;
         list-style: none;
         border-bottom: 1px lighten(@mainColor, 60%) dotted;
-        font: ~"@font * 0.8em";
+        font: @font;
 
     }
 }
